@@ -1,0 +1,277 @@
+/* Global Page Styles */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #fff1f2;
+  color: #333;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Main Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background:#f0f9f0  ;
+  padding: 24px;
+  border-radius: 12px;  border: 2px solid #ccc;  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Main Heading */
+h1 {
+  color: #30475e;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Mood Picker Layout */
+.mood-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+/* Mood Emoji Buttons */
+.mood-picker button {
+  font-size: 3rem;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Color-coded Mood Backgrounds */
+.mood-picker button[data-mood="happy"] {
+  background: #fff8e1;
+  border-color: #ffd54f;
+}
+
+.mood-picker button[data-mood="good"] {
+  background: #e8f5e8;
+  border-color: #66bb6a;
+}
+
+.mood-picker button[data-mood="neutral"] {
+  background: #f5f5f5;
+  border-color: #9e9e9e;
+}
+
+.mood-picker button[data-mood="sad"] {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.mood-picker button[data-mood="stressed"] {
+  background: #ffebee;
+  border-color: #f44336;
+}
+
+.mood-picker button:hover {
+  background: #6a9fee;
+  transform: scale(1.08);
+  
+}
+
+.mood-picker button.selected {
+  border-color: #4964d6;
+  background: #e6f0ff;
+  box-shadow: 0 0 0 4px rgba(73, 100, 214, 0.2);
+  transform: scale(1.12);
+}
+
+/* Label + Textarea */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+textarea {
+  width: 96%;
+  min-height: 100px;
+  padding: 12px;
+  border: 2px solid #ffd54f;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  background: #fff8e1;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #f57c00;
+  box-shadow: 0 0 0 3px rgba(255, 213, 79, 0.2);
+}
+
+/* Save Button */
+#save-btn {
+  margin-top: 12px;
+  width:auto;
+  background: #4964d6;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#save-btn:hover {
+  background: #2e3a8c;
+}
+
+/* Filter Buttons */
+#filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+#filter button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+#filter button:hover {
+  background: #e6f0ff;
+}
+
+#filter button.active {
+  border-color: #4964d6;
+  background: #e6f0ff;
+  font-weight: 700;
+}
+
+/* Saved Entry Rows */
+.entry {
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.entry button {
+  background: #615f5f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.entry button:hover {
+  background: #cc0000;
+}
+
+.entry button:hover {
+  background: #cc0000;
+}
+
+/* Stats Box */
+#stats {
+  margin: 16px 0;
+  padding: 12px;
+  background: #f0f8ff;
+  border-radius: 8px;
+}
+
+/* Entry Form Section */
+#entry-form {
+  background: #eef2ff;
+  border: 2px solid #7b97f3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+#entry-form h2 {
+  margin-top: 0;
+  color: #f57c00;
+}
+
+/* History Section */
+#history {
+  background: #e3f2fd;
+  border: 2px solid #2196f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#history h2 {
+  margin-top: 0;
+  color: #1565c0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Mobile styles */
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+  
+  .mood-picker {
+    gap: 8px;
+  }
+  
+  .mood-picker button {
+    font-size: 2.5rem;
+    padding: 10px 12px;
+  }
+  
+  #entry-form, #history {
+    padding: 15px;
+  }
+  
+  textarea {
+    font-size: 1rem;
+  }
+  
+  #saveEntry {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile styles */
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .mood-picker button {
+    font-size: 2rem;
+    padding: 8px 10px;
+  }
+  
+  #entry-form, #history {
+    padding: 12px;
+  }
+  
+  textarea {
+    min-height: 80px;
+  }
+}

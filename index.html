@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood and Activity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Mood and Activity Tracker App -->
+    <main class="container">
+        <h1>Mood and Activity Tracker</h1>
+        <!-- Entry Form -->
+        <section id="entry-form">.
+
+            <!-- Mood Picker -->
+           <h2>Todays Entry</h2> 
+           <div id="moodPicker" class="mood-picker" aria-label="Choose a mood"> 
+                <button type="button" data-mood="happy" aria-label="Happy">😊</button> 
+                <button type="button" data-mood="good" aria-label="Good">🙂</button> 
+                <button type="button" data-mood="neutral" aria-label="Neutral">😐</button> 
+                <button type="button" data-mood="sad" aria-label="Sad">😔</button> 
+                <button type="button" data-mood="stressed" aria-label="Stressed">😓</button>
+            </div> 
+            <br>
+
+        <!-- Activity Input -->
+        </section>
+            <label for="activities">Activities:</label>
+            <textarea id="activities" rows="4" placeholder="What activities did you do today? (1-3 activities)" rows="4"></textarea>
+
+        <!-- Save Button -->
+            <button id="save-btn" type="button">Save Entry</button>
+       
+            <br><br>
+
+        <!-- History Section -->
+        <section id="history"> 
+            <h2>History</h2>
+            
+            <div id="filter" aria-label="Filter entries by mood"> 
+                <button type="button" data-filter="">All</button> 
+                <button type="button" data-filter="happy">Happy 😊</button> 
+                <button type="button" data-filter="good">Good 🙂</button> 
+                <button type="button" data-filter="neutral">Neutral 😐</button> 
+                <button type="button" data-filter="sad">Sad 😔</button> 
+                <button type="button" data-filter="stressed">Stressed 😓</button> 
+            </div>
+            
+            <!-- Stats Section -->
+            <div id="stats"></div>
+            <div id="entries-list"></div>
+        </section>
+
+        <script src="script.js"></script>
+            
+    </main>
+</body>
+</html>
