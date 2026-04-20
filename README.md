@@ -2,12 +2,16 @@
 
 A simple single‑page web application built using **HTML, CSS, and vanilla JavaScript**.  
 It allows users to select their mood for the day, enter activities, and save entries using the browser’s **localStorage**, so the data stays even after refreshing or closing the page.
+Live URL
 
-Live URL:
-https://YOURNAME.github.io/YOURREPO/
-GitHub Repository:
-https://github.com/YOURNAME/YOURREPO
-Video:
+https://srilakshmi761.github.io/Mood-and-Activity-Tracker/
+
+Repo URL
+
+https://github.com/Srilakshmi761/Mood-and-Activity-Tracker
+
+ Video:
+
 Canvas upload
 Overview:  
 This application allows users to:
